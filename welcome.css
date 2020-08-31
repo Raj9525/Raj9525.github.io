@@ -5,8 +5,9 @@
 background-color: #F8F8F8;
 height: 12mm;
 width: 195.5mm;
+margin-left: auto;
+margin: auto;
 display: flex;
-left: 21%;
 align-items: center;
 border-radius: 6px;
 }
@@ -209,7 +210,7 @@ border-radius: 30px;
 
  div.bg-img {
      position: relative;
- background-image: url("img/BG_1_1.png");
+ background-image: url("img/madhu.jpg");
  background-position: 0 0;
  background-repeat: no-repeat;
  top:-111.5mm;
@@ -219,6 +220,7 @@ border-radius: 30px;
  }
 
  #layer2{
+     z-index: 0;
     width: 54mm;
     height: 111mm;
     cursor: grab;
@@ -768,7 +770,7 @@ float: right;
 
 
  #previewImage{
-
+    visibility: hidden;
      position: relative;
      top:10mm;
      left: -1.35mm;

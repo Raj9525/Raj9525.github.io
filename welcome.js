@@ -1,7 +1,10 @@
 
-    window.alert("1. Choose your image\n2. Drag and Drop the Employee's photo to exact output\n3. Click fix button"+
-    "\n4. If you want to adjust again click refix button\n5. Edit all texts in the right area & click submit\n6.Click Preview button\n7. Then download" );
+    window.alert("1. Edit texts in the text area & click submit\n2. Choose your image\n3. Drag and Drop the Employee's photo to exact output"+
+    "\n4. Click fix button\n5. If you want to adjust again click adjust button \n6. Once you satisfied with the look then download\n\n"
+    + "***Note: In the uploading image, the space between employee's head and top edge of the image must be atlease 18mm same like below default image" );
 
+
+   
 /*Image conversion & download
 
     $(document).ready(function(){
@@ -50,6 +53,25 @@ if (action==1){
   }
 
 if (action==2){
+    const original = document.querySelector('#container')
+    const canvasContainer = document.querySelector('#previewImage')
+  
+  html2canvas(original, {
+     scale: 2,
+     useCORS: true,
+   }).then(canvas => {
+    canvasContainer.appendChild(canvas);
+    canvas.setAttribute("id","canva");
+    canva=document.querySelector("#canva");
+  const a=document.createElement("a");
+          document.body.appendChild(a);
+          a.href=canva.toDataURL();
+          a.download="Welcome" + "_" + EmpName.textContent +".png";
+          a.click();
+          document.body.removeChild(a);
+          action=2;
+          console.log(action);
+  })
     var item = document.getElementById("canva");
     item.parentNode.removeChild(item);
     action=1;
@@ -124,9 +146,10 @@ document.body.style.backgroundPosition = "center top";*/
 
 function view(){
 document.getElementById("layer1").style.zIndex = "1";
+document.getElementById("layer2").style.zIndex = "";
 }
 function refix(){
-document.getElementById("layer1").style.zIndex = "";
+document.getElementById("layer2").style.zIndex = "6";
 }
 function myFunction1() {
 var para1 = document.getElementById("welcome").value;
