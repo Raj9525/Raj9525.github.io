@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="welcome.css">
+        <link href='https://fonts.googleapis.com/css?family=Tinos' rel='stylesheet'>
+        <link rel="stylesheet" href="font-awesome.min.css">
+
+<script src="jquery.min.js"></script>
+<script src="html2canvas.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+<style>
+ 
+</style>
+    </head>
+
+    <body>
+<div id="head">
+<div id="inhead">
+    <h3>Welcoming Employee</h3>
+</div>
+
+</div>
+<br/>
+<br/>
+
+        <div id="Tbody">
+<!--Container-->  
+<!--User Input Text-->
+<div id="input">
+    <div>
+        <h5>Enter your contents below</h5>
+    <textarea name="text"  wrap="soft" maxlength="30" id="welcome" placeholder="welcome [30]" style="resize: none; border-radius: 4px; width:250px; height: 17px;" title="Edit Text" onfocus=" setbg1('#caf0f8');" onblur="setbg1('white')"></textarea><br/>
+    <textarea name="text"  wrap="soft" maxlength="22" id="name" placeholder="Name of the employee [22]" style="resize: none;  border-radius: 4px; width:250px; height: 17px;" title="Edit Text" onfocus=" setbg2('#caf0f8');" onblur="setbg2('white')"></textarea><br/>
+    <textarea name="text"  wrap="soft" maxlength="45" id="designation" placeholder="Designation [45]" style="resize: none;  border-radius: 4px; width:250px; height: 17px;" title="Edit Text" onfocus=" setbg3('#caf0f8');" onblur="setbg3('white')"></textarea><br/>
+    <textarea name="text"  wrap="soft" maxlength="500" id="content" placeholder="HR's Words [500]" style="resize: none;  border-radius: 4px; width:250px; height: 188px;" title="Edit Text" onfocus=" setbg4('#caf0f8');" onblur="setbg4('white')"></textarea><br/>
+    <textarea inputtype="mail" name="text"  wrap="soft" maxlength="25" id="mail" placeholder="Email Id [25]" style="resize: none;  border-radius: 4px; width:250px; height: 17px;" title="Edit Text" onfocus=" setbg5('#caf0f8');" onblur="setbg5('white')"></textarea><br/>
+    <textarea type="number" name="text"  wrap="soft" maxlength="13" id="mobile" placeholder="Contact number [13]" style="resize: none; border-radius: 4px; width:250px; height: 17px;" title="Edit Text" onfocus=" setbg6('#caf0f8');" onblur="setbg6('white')"></textarea><br/>
+    <textarea name="text"  wrap="soft" maxlength="160" id="bottom" placeholder="HR's Words [160]" style="resize: none; border-radius: 4px; width:250px; height: 105px;" title="Edit Text" onfocus=" setbg7('#caf0f8');" onblur="setbg7('white')"></textarea><br/>
+    <!--Submit btn-->
+    <button id="submit" type="button" onclick="myFunction1(); myFunction2(); myFunction3(); myFunction4(); myFunction5(); myFunction6(); myFunction7(); " title="Click to place the text content on the background image"><span>Submit&nbsp&nbsp</span><i class="fa fa-caret-right"></i></button>
+</div>
+</div>
+
+<!--User Input Text-->
+
+
+
+
+<div id="base">    
+<div  id="container" class="container" >
+
+<div style="float: left; height: 121mm;" >
+
+<div class="layer1" id="layer1" title="Background-image">
+<span></span>    
+    
+</div>
+
+
+
+
+<!--Bg img drag-->
+<div class="bg-img" id="layer2" title="Drag & Drop to adjust employee's photo"></div>
+<p>
+    <input type="" id="data"/>
+</p>
+</div>
+ <!--Bg img drag-->
+
+
+
+
+
+
+
+
+
+<!--Inner Texts-->
+<div id="inner">
+    <p id=p1>Welcome</p>
+    <p id="p2">Mr. Madhu</p>
+    <p id=p3>CEO</p>
+    <p id=p4 style="text-align: justify;">He holds 10 plus years of experience with organizations like Paytm, Snapdeal and 
+        expedia graduated with bachelors Degree in Digital comm/multimedia From Bihar-Bengusarai(This place has an influence of Kolkata) 
+        lives with his parents and sibling He is an avid player of Volleyball and Cricket apart from sports he loves to explore 
+        new places for breakfast & brunch </p>
+    <p id=p5>madhu@m2p.in</p>
+    <p id=p6>09876543210</p>
+    <p id=p7>Please join me in welcoming Madhu to our YAP family. Welcome aboard!!!
+        </p>
+    </div>
+<!--Inner Texts-->    
+
+<!--Container-->
+
+
+
+
+</div>
+
+
+<!--Interaction-->
+
+    
+<div id="interaction">
+    <!-- <label id="choose" for="file-upload">
+     <input type="file" src="" name="inpFile" id="inpFile" onchange="previewFile(this);" title="Choose a Photo"/>
+ </label >-->
+ 
+ 
+     <div id="btnUpload" onclick="getFile()"><i class="fa fa-upload"></i><span>&nbsp&nbspUpload</span></div>
+     <!-- this is your file input tag, so i hide it!-->
+     <!-- i used the onchange event to fire the form submission-->
+     <div style='height: 0px;width: 0px; overflow:hidden;'><input id="inpFile" type="file" src="" name="inpFile" id="inpFile" value="upload" onchange="previewFile(this);sub(this)" title="Choose a Photo" /></div>
+     <!-- here you can have file submit button or you can write a simple script to upload the file automatically-->
+     <!-- <input type="submit" value='submit' > -->
+ 
+ 
+ 
+     <button id="fix" class="fix" type="button" value="Fix" onclick="view();" title="Click to fix the employee's photo on the background"><i class="fa fa-anchor"></i><span>&nbsp&nbspFix</span></button>
+     <button id="fix" class="adjust" type="button" value="Adjust" onclick="refix();" title="Click to adjust again the fixed photo of employee"><i class="fas fa-tools"></i><span>&nbsp&nbspAdjust</span></button>
+     <!--<button id="resize" class="resize" type="button" value="Resize" onclick="resize();" onblur="" title="Click to fix the employee's photo on the background"><span>Resize</span></button>-->
+     <!--<button id="btn-Preview-Image" class="preview" type="button" onclick="" value="Generate" title="Click to preview the final image to be downloaded"></i><span class="iconify" data-icon="fa-brands:battle-net"></span>&nbspGenerate</button>-->
+     
+     <button id="btn-Convert-Html2Image" class="download" type="button" onclick="convert();"  title="Download the final artwork"><i class="fa fa-download"></i><span>&nbsp&nbsp</span>Download</button>
+     
+ </div>
+ <!--Interaction-->
+
+<!--<button id="zoomin" class="zoomin" style="top: 10mm; position: relative;" onclick="zoom()" >zoomin</button>-->
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--previewcontainer-->
+<div id="previewImage" class="previewImage" ></div>
+<!--previewcontainer-->
+
+
+
+
+
+
+<!--Bg input -->
+<script>
+    function getFile() {
+    document.getElementById("inpFile").click();
+  }
+  
+  /*function sub(obj) {
+    var file = obj.value;
+    var fileName = file.split("\\");
+    document.getElementById("btnUpload").innerHTML = fileName[fileName.length - 1];
+   /* document.myForm.submit();*/
+    //event.preventDefault();
+  
+</script>
+    </body>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    
+</script>
+
+
+<script src="welcome.js"></script>
+</html>
