@@ -1,7 +1,7 @@
 
-    window.alert("1. Edit texts in the text area & click submit\n2. Choose your image\n3. Drag the Employee's photo to get exact output"+
+    window.alert("1. Edit texts in the text area & click submit\n2. Choose your image\n3. Drag to adjust the Employee's photo to get exact output"+
     "\n4. Click fix button\n5. If you want to adjust again click adjust button and adjust \n6. Once you satisfied with the look then download\n\n"
-    + "***Note: In the uploading image, the space between employee's head and top edge of the image must be atlease 18mm same like below default image" );
+    + "***Note: When uploading an image, please make sure the space between employee's head and top edge of the image in atleast 18mm same like below default image" );
 
 
    
@@ -46,7 +46,7 @@ if (action==1){
           a.href=canva.toDataURL();
           a.download="Welcome" + "_" + EmpName.textContent +".png";
           a.click();
-          document.body.removeChild(a);
+          //document.body.removeChild(a);
           action=2;
           console.log(action);
   })

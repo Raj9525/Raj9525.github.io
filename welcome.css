@@ -5,7 +5,7 @@
 background-color: #F8F8F8;
 height: 12mm;
 width: 195.5mm;
-margin-left: auto;
+left: 1mm;
 margin: auto;
 display: flex;
 align-items: center;
