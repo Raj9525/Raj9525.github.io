@@ -241,6 +241,226 @@ function setbg7(color)
 {
     document.getElementById("bottom").style.background=color
 }
+
+/*input colour functions*/
+
+/*Tutorial*/
+var step=1;
+
+function nxslide(){
+if (step==1){
+    
+    document.getElementById("popupimg").setAttribute("src", "img/2.jpg");
+    
+    step=2;
+    var x = document.getElementsByClassName("dot");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#a3b6db";
+    x[i].style.border = "none";
+  }
+    
+    document.getElementById("dot1").style.backgroundColor="#3a86ff";
+    document.getElementById("previous").style.backgroundColor="#3a86ff";
+    
+}
+else if (step==2){
+
+    document.getElementById("popupimg").setAttribute("src", "img/3.jpg");
+    step=3;
+    var x = document.getElementsByClassName("dot");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#a3b6db";
+    x[i].style.border = "none";
+  }
+    
+    document.getElementById("dot2").style.backgroundColor="#3a86ff";
+}
+else if (step==3){
+
+    document.getElementById("popupimg").setAttribute("src", "img/4.jpg");
+    step=4;
+    var x = document.getElementsByClassName("dot");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#a3b6db";
+    x[i].style.border = "none";
+  }
+    
+    document.getElementById("dot3").style.backgroundColor="#3a86ff";
+}
+else if (step==4){
+
+    document.getElementById("popupimg").setAttribute("src", "img/5.jpg");
+    step=5;
+    var x = document.getElementsByClassName("dot");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#a3b6db";
+    x[i].style.border = "none";
+  }
+    
+    document.getElementById("dot4").style.backgroundColor="#3a86ff";
+}
+else if (step==5){
+
+    document.getElementById("popupimg").setAttribute("src", "img/6.jpg");
+    step=6;
+    var x = document.getElementsByClassName("dot");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#a3b6db";
+    x[i].style.border = "none";
+  }
+    
+    document.getElementById("dot5").style.backgroundColor="#3a86ff";
+}
+else if (step==6){
+
+    document.getElementById("popupimg").setAttribute("src", "img/7.jpg");
+    step=7;
+    var x = document.getElementsByClassName("dot");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#a3b6db";
+    x[i].style.border = "none";
+  }
+    
+    document.getElementById("dot6").style.backgroundColor="#3a86ff";
+}
+else if (step==7){
+
+    document.getElementById("popupimg").setAttribute("src", "img/8.jpg");
+    step=8;
+    var x = document.getElementsByClassName("dot");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#a3b6db";
+    x[i].style.border = "none";
+  }
+    
+    document.getElementById("dot7").style.backgroundColor="#3a86ff";
+    document.getElementById("next").innerHTML="Close X";
+}
+else if (step==8){
+
+    document.getElementById("popcontainer").style.transform="scale(0)";
+    document.getElementById("popcontainer").style.top="-300mm";
+}
+console.log(step);
+}
+
+
+function clicon(){
+    document.getElementById("popcontainer").style.transform="scale(0)";
+    document.getElementById("popcontainer").style.top="-300mm";
+}
+
+function transit(){
+    document.getElementById("popcontainer").style.transform="scale(1)";
+    document.getElementById("popcontainer").style.top="0.5mm";
+
+}
+
+
+function preslide(){
+    if (step==2){
+    
+        document.getElementById("popupimg").setAttribute("src", "img/1.jpg");
+        step=1;
+        var x = document.getElementsByClassName("dot");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#a3b6db";
+    x[i].style.border = "none";
+  }
+    
+    document.getElementById("dot").style.backgroundColor="#3a86ff";
+        document.getElementById("previous").style.backgroundColor="#a3b6db";
+    }
+    else if (step==3){
+    
+        document.getElementById("popupimg").setAttribute("src", "img/2.jpg");
+        step=2;
+        var x = document.getElementsByClassName("dot");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#a3b6db";
+    x[i].style.border = "none";
+  }
+    
+    document.getElementById("dot1").style.backgroundColor="#3a86ff";
+    }
+    else if (step==4){
+    
+        document.getElementById("popupimg").setAttribute("src", "img/3.jpg");
+        step=3;
+        var x = document.getElementsByClassName("dot");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#a3b6db";
+    x[i].style.border = "none";
+  }
+    
+    document.getElementById("dot2").style.backgroundColor="#3a86ff";
+    }
+    else if (step==5){
+    
+        document.getElementById("popupimg").setAttribute("src", "img/4.jpg");
+        step=4;
+        var x = document.getElementsByClassName("dot");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#a3b6db";
+    x[i].style.border = "none";
+  }
+    
+    document.getElementById("dot3").style.backgroundColor="#3a86ff";
+    }
+    else if (step==6){
+    
+        document.getElementById("popupimg").setAttribute("src", "img/5.jpg");
+        step=5;
+        var x = document.getElementsByClassName("dot");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#a3b6db";
+    x[i].style.border = "none";
+  }
+    
+    document.getElementById("dot4").style.backgroundColor="#3a86ff";
+    }
+    else if (step==7){
+    
+        document.getElementById("popupimg").setAttribute("src", "img/6.jpg");
+        step=6;
+        var x = document.getElementsByClassName("dot");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#a3b6db";
+    x[i].style.border = "none";
+  }
+    
+    document.getElementById("dot5").style.backgroundColor="#3a86ff";
+    }
+    else if (step==8){
+    
+        document.getElementById("popupimg").setAttribute("src", "img/7.jpg");
+        step=7;
+        var x = document.getElementsByClassName("dot");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#a3b6db";
+    x[i].style.border = "none";
+  }
+    
+    document.getElementById("dot6").style.backgroundColor="#3a86ff";
+    }
+    
+    console.log(step);
+    }
+
 /*Custome functions*/
 
 

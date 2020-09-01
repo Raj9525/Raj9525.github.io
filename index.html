@@ -16,7 +16,37 @@
 </style>
     </head>
 
-    <body>
+    <body onload="transit()">
+        <div id="popcontainer" >
+            <img id="clicon" src="img/clicon.png" onclick="clicon();"/>
+            <h5 style="position:absolute; top: 3mm; color: darkblue;">This is <strong>How to</strong></h5>
+            <div> 
+            
+            <img src="img/1.jpg" id="popupimg"/>
+        </div>
+        <div id="popcontrol">
+            <button id="previous" onclick=" preslide();"> &lt; Previous </button>
+            <div class="dot" id="dot"></div>
+            <div class="dot" id="dot1"></div>
+            <div class="dot" id="dot2"></div>
+            <div class="dot" id="dot3"></div>
+            <div class="dot" id="dot4"></div>
+            <div class="dot" id="dot5"></div>
+            <div class="dot" id="dot6"></div>
+            <div class="dot" id="dot7"></div>
+           
+
+           
+            <button id="next" onclick=" nxslide();" >Next &gt;</button>
+            
+            </div>
+        </div>
+        
+
+
+
+
+
 <div id="head">
 <div id="inhead" style="">
     <h3 style="float: left;">Welcoming Employee</h3>
@@ -24,10 +54,16 @@
 </div>
 <div style="position:relative;float: right;left: 71.5% ;">
     <img src="img/YAP.png" style="width: 30px; height: 30px;"/>
+    <img id="i" src="img/i.png" onclick="transit();"/>
 </div>
 </div>
+
 <br/>
 <br/>
+
+
+
+
 
         <div id="Tbody">
 <!--Container-->  

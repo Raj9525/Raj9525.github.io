@@ -1,5 +1,0 @@
-RewriteEngine On
-AuthType Basic
-AuthName "Restricted Content"
-AuthUserFile .htpasswd
-Require valid-user
