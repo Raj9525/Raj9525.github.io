@@ -326,7 +326,7 @@ else if (step==6){
     x[i].style.backgroundColor = "#a3b6db";
     x[i].style.border = "none";
   }
-    
+  
     document.getElementById("dot6").style.backgroundColor="#3a86ff";
 }
 else if (step==7){
@@ -340,12 +340,15 @@ else if (step==7){
     x[i].style.border = "none";
   }
     
-    document.getElementById("dot7").style.backgroundColor="#3a86ff";
+    document.getElementById("dot7").style.backgroundColor="#2bff01";
     document.getElementById("next").innerHTML="Close X";
+    document.getElementById("next").style.backgroundColor="red";
+    
+
 }
 else if (step==8){
 
-    document.getElementById("popcontainer").style.transform="scale(0)";
+    
     document.getElementById("popcontainer").style.top="-300mm";
 }
 console.log(step);
@@ -353,14 +356,29 @@ console.log(step);
 
 
 function clicon(){
-    document.getElementById("popcontainer").style.transform="scale(0)";
+    
     document.getElementById("popcontainer").style.top="-300mm";
+    document.getElementById("popcontainer").style.opacity="0";
+    document.getElementById("clicon").style.opacity="0";
 }
 
 function transit(){
-    document.getElementById("popcontainer").style.transform="scale(1)";
+    
     document.getElementById("popcontainer").style.top="0.5mm";
-
+    document.getElementById("popcontainer").style.opacity="1";
+    document.getElementById("next").style.backgroundColor="#3a86ff";
+    document.getElementById("next").innerHTML="Nexxt >";
+    document.getElementById("popupimg").setAttribute("src", "img/1.jpg");
+    document.getElementById("previous").style.backgroundColor="#a3b6db";
+    document.getElementById("clicon").style.opacity="1";
+    var x = document.getElementsByClassName("dot");
+  var i;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.backgroundColor = "#a3b6db";
+    x[i].style.border = "none";
+  }
+  document.getElementById("dot").style.backgroundColor="#3a86ff";
+    step=1;
 }
 
 
@@ -455,7 +473,9 @@ function preslide(){
     x[i].style.border = "none";
   }
     
-    document.getElementById("dot6").style.backgroundColor="#3a86ff";
+  document.getElementById("next").innerHTML="Next &gt;";
+    document.getElementById("dot6").style.backgroundColor="green";
+    document.getElementById("next").style.backgroundColor="#3a86ff";
     }
     
     console.log(step);
