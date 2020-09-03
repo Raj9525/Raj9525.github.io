@@ -245,6 +245,7 @@ function setbg7(color)
 /*input colour functions*/
 
 /*Tutorial*/
+/*
 var step=1;
 
 function nxslide(){
@@ -480,7 +481,7 @@ function preslide(){
     
     console.log(step);
     }
-
+*/
 /*Custome functions*/
 
 
