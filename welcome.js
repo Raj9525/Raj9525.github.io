@@ -1,13 +1,7 @@
 
-<<<<<<< HEAD
     /*window.alert("1. Edit texts in the text area & click submit\n2. Choose your image\n3. Drag to adjust the Employee's photo to get exact output"+
     "\n4. Click fix button\n5. If you want to adjust again click adjust button and adjust \n6. Once you satisfied with the look then download\n\n"
     + "***Note: When uploading an image, please make sure the space between employee's head and top edge of the image in atleast 18mm same like below default image" );*/
-=======
-    window.alert("1. Edit texts in the text area & click submit\n2. Choose your image\n3. Drag to adjust the Employee's photo to get exact output"+
-    "\n4. Click fix button\n5. If you want to adjust again click adjust button and adjust \n6. Once you satisfied with the look then download\n\n"
-    + "***Note: When uploading an image, please make sure the space between employee's head and top edge of the image in atleast 18mm same like below default image" );
->>>>>>> parent of 79329df... test5
 
 
    
@@ -253,7 +247,7 @@ function setbg7(color)
 /*Tutorial*/
 <<<<<<< HEAD
 =======
-/*
+
 >>>>>>> parent of 79329df... test5
 var step=1;
 
@@ -490,7 +484,7 @@ function preslide(){
     
     console.log(step);
     }
-*/
+
 /*Custome functions*/
 
 
